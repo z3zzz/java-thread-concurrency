@@ -1,5 +1,3 @@
-package main.concurrency;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -7,6 +5,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Java의 built-in 아토믹 인크레멘터를 사용 -> thread safe
  * 일반 primitive 사용 -> thread unsafe (lock이 없음)
+ *
+ * 각 thread는 join 하지 않으면 프로그램 조기 종료됨
  */
 public class Concurrency {
 
